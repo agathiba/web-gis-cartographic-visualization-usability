@@ -4,6 +4,15 @@ Advanced cartographic workflows, 3D WebGL terrain visualization, spatiotemporal 
 
 📄 **[Read the Full Technical Report & Presentation (PDF)](./Cartographic_Visualization_Web_GIS_Report.pdf)**
 
+🌐 **Live demo:** [https://agathiba.github.io/web-gis-cartographic-visualization-usability/](https://agathiba.github.io/web-gis-cartographic-visualization-usability/)
+
+| Map | Link |
+| :--- | :--- |
+| Animated population map of the Peloponnese (1940–2011) | [Open](https://agathiba.github.io/web-gis-cartographic-visualization-usability/) |
+| 3D map of Santorini (desktop) | [Open](https://agathiba.github.io/web-gis-cartographic-visualization-usability/santorini/index.html) |
+| 3D map of Santorini (mobile, with AR mode) | [Open](https://agathiba.github.io/web-gis-cartographic-visualization-usability/santorini/mobile.html) |
+| Airports of Greece (interactive web map) | [Open](https://agathiba.github.io/web-gis-cartographic-visualization-usability/airports/index.html) |
+
 ---
 
 ## 📌 Project Modules
@@ -30,9 +39,9 @@ Advanced cartographic workflows, 3D WebGL terrain visualization, spatiotemporal 
 ### 2. Interactive Web GIS & 3D Geovisualization Platform
 * **Objective:** Development of an integrated web platform hosting interactive, temporal, and three-dimensional geospatial assets.
 * **Interactive Modules:**
-  * **Spatiotemporal Population Animation (Peloponnese 1940–2011):** Formulated an automated Python workflow utilizing `numpy.quantile` to standardize global symbology thresholds across all historical census records, producing smooth frame-blended temporal animations.
+  * **Spatiotemporal Population Animation (Peloponnese 1940–2011):** Formulated a Python workflow ([`scripts/quantile_breaks.py`](./scripts/quantile_breaks.py)) utilizing `numpy.quantile` to standardize global symbology thresholds across all historical census records, producing smooth frame-blended temporal animations.
   * **3D Surface & Bathymetric Visualization (Santorini Island):** Fused sub-aerial Digital Elevation Models (DEM) with marine bathymetry rasters, serving interactive WebGL scenes with multi-source basemaps (Esri, Bing, Google) via `Qgis2threejs`.
-  * **Interactive Web Map & Airport Geoportal:** Generated interactive vector mapping with spatial point clustering, search bars, and dynamic attribute popups via `qgis2web` (Leaflet / OpenLayers framework).
+  * **Interactive Web Map & Airport Geoportal:** Generated interactive vector mapping with spatial point clustering, search bars, and dynamic attribute popups via `qgis2web` (OpenLayers).
   * **Web Portal Deployment:** Compiled all assets into a unified, responsive HTML web interface.
 
 <p align="center">
@@ -66,3 +75,31 @@ Advanced cartographic workflows, 3D WebGL terrain visualization, spatiotemporal 
 * **Programming & Data Analysis:** Python (NumPy, quantile distributions), HTML5/CSS
 * **Graphics & Authoring:** GIMP, KompoZer
 * **Domain Topics:** Thematic Cartography, 3D Bathymetry/DEM Fusion, Spatiotemporal Analysis, Cartographic UX/UI, Eye-Tracking Usability
+
+---
+
+## 📁 Repository Structure
+
+```
+├── docs/                         # Website, published with GitHub Pages
+│   ├── index.html                # Landing page with all four maps
+│   ├── peloponnese_animation.gif # Animated population map (1940–2011)
+│   ├── santorini/                # 3D WebGL scene exported with Qgis2threejs
+│   │   ├── index.html            #   desktop version
+│   │   └── mobile.html           #   mobile version (device orientation & AR mode)
+│   └── airports/                 # Interactive web map exported with qgis2web
+├── scripts/
+│   └── quantile_breaks.py        # Common quantile class limits for the animation
+├── images/                       # Figures used in this README
+└── Cartographic_Visualization_Web_GIS_Report.pdf
+```
+
+## ▶️ Run Locally
+
+The maps load their data with JavaScript, so open them through a local web server rather than by double-clicking the files:
+
+```bash
+cd docs
+python -m http.server 8000
+# then open http://localhost:8000
+```
