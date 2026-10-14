@@ -15,6 +15,16 @@ Advanced cartographic workflows, 3D WebGL terrain visualization, spatiotemporal 
   * **Statistical Breakdown (Histograms):** Compared **Natural Breaks (Jenks)** and **Quantile** classification algorithms on skewed population distributions to prevent visual distortion.
   * **Advanced Representation Methods:** Produced Choropleth maps, graduated point distributions, proportional pie charts (gender breakdown), and continuous area-distortion **Contiguous Cartograms** using the `cartogram3` algorithm.
 
+<p align="center">
+  <img src="images/choropleth_and_symbols.png" alt="Choropleth population density (left) and proportional pie-chart symbols (right)">
+  <br><em>Choropleth population density (left) and proportional pie-chart symbols (right)</em>
+</p>
+
+<p align="center">
+  <img src="images/peloponnese_population_1940_2011.png" alt="Frames from the animated population map of the Peloponnese, 1940 and 2011">
+  <br><em>Frames from the animated population map of the Peloponnese, 1940 and 2011</em>
+</p>
+
 ---
 
 ### 2. Interactive Web GIS & 3D Geovisualization Platform
@@ -25,6 +35,16 @@ Advanced cartographic workflows, 3D WebGL terrain visualization, spatiotemporal 
   * **Interactive Web Map & Airport Geoportal:** Generated interactive vector mapping with spatial point clustering, search bars, and dynamic attribute popups via `qgis2web` (Leaflet / OpenLayers framework).
   * **Web Portal Deployment:** Compiled all assets into a unified, responsive HTML web interface.
 
+<p align="center">
+  <img src="images/santorini_3d.png" alt="Santorini: bathymetry (left) and 3D terrain visualization from DEM data (right)">
+  <br><em>Santorini: bathymetry (left) and 3D terrain visualization from DEM data (right)</em>
+</p>
+
+<p align="center">
+  <img src="images/airports_web_map.png" width="700" alt="Multimedia web map of Greek airports with linked metadata">
+  <br><em>Multimedia web map of Greek airports with linked metadata</em>
+</p>
+
 ---
 
 ### 3. Cartographic Usability & Eye-Tracking Evaluation
@@ -33,6 +53,11 @@ Advanced cartographic workflows, 3D WebGL terrain visualization, spatiotemporal 
   * **Quantitative Eye-Tracking Metrics:** Evaluated gaze fixations, scanpath trajectories, trial duration, and visual heatmaps across 34 participants (16 novices vs. 18 GIS experts).
   * **Comparative Benchmark:** Analyzed usability bottlenecks, cognitive overload, and interface clarity across 5 web mapping platforms (*Windy*, *DarkSky*, *In-Počasí*, *YR.no*, *Wundermap*).
   * **User-Centered Design (UCD) Principles:** Synthesized guidelines for reducing visual clutter, optimizing legend accessibility, and designing adaptive user interfaces for diverse skill levels.
+
+<p align="center">
+  <img src="images/eye_tracking_heatmaps.png" width="800" alt="Eye-tracking heatmaps on five weather web maps (Dark Sky, Windy, In-Počasí, Yr.no, Wundermap)">
+  <br><em>Eye-tracking heatmaps on five weather web maps (Dark Sky, Windy, In-Počasí, Yr.no, Wundermap)</em>
+</p>
 
 ---
 
