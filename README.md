@@ -13,6 +13,11 @@ Advanced cartographic workflows, 3D WebGL terrain visualization, spatiotemporal 
 | 3D map of Santorini (mobile, with AR mode) | [Open](https://agathiba.github.io/web-gis-cartographic-visualization-usability/santorini/mobile.html) |
 | Airports of Greece (interactive web map) | [Open](https://agathiba.github.io/web-gis-cartographic-visualization-usability/airports/index.html) |
 
+<p align="center">
+  <a href="https://agathiba.github.io/web-gis-cartographic-visualization-usability/santorini/index.html"><img src="images/santorini_3d.gif" width="560" alt="Animated orbit around the 3D map of Santorini"></a>
+  <br><em>3D map of Santorini (Qgis2threejs) – click to open the interactive version</em>
+</p>
+
 ---
 
 ## 📌 Project Modules
